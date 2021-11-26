@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class_16re.html</title>
+    <style>
+        header {
+            background-color: #eee;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .logo {
+            flex-basis: 200px;
+            background-color: yellow;
+        }
+
+        .navi {
+            display: flex;
+            flex-basis: 400px;
+        }
+
+        .navi div {
+            flex: 1;
+        }
+
+        .gnb {
+            background-color: red;
+        }
+
+        .lnb {
+            background-color: powderblue;
+        }
+
+        @media (max-width : 768px) {
+
+            header {
+                flex-direction: column;
+            }
+
+            .logo {
+                flex-basis: auto;
+            }
+
+            .navi {
+                flex-direction: column;
+                flex-basis: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">logo</div>
+        <div class="navi">
+            <div class="gnb">gnb</div>
+            <div class="lnb">lnb</div>
+        </div>
+
+    </header>
+</body>
+
+</html>
