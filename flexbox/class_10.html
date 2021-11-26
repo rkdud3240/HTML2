@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>class_10.html</title>
+    <style>
+        .parent {
+            border: 5px solid green;
+            height: 400px;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-around;
+        }
+
+        .parent div {
+            display: grid;
+            align-content: center;
+            width: 100px;
+            height: 100px;
+            color: #fff;
+            text-align: center;
+            margin-left: 10px;
+            background-color: crimson;
+        }
+
+        .child1 {
+            flex-grow: 1;
+            /*부모 전체의 4분의 1만큼 차지함 */
+        }
+
+        .child2 {
+            flex-grow: 2;
+            /*부모 전체의 4분의 2만큼 차지함 */
+        }
+
+        .child3 {
+            flex-grow: 1;
+            /*부모  전체의 4분의 1만큼 차지함 */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+
+        <div class="child1">child1</div>
+        <div class="child2">child2</div>
+        <div class="child3">child3</div>
+
+
+
+    </div>
+</body>
+
+</html>

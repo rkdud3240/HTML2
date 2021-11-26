@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트 round_04.html</title>
+    <script>
+        let d;
+
+        var a = 5, b, c;//전역변수
+        //a는 선언과 동시에 초기화 b,c는 선언만 
+        //var b;
+        //var c;
+        //함수 설계
+        function aaa() {
+            var test;//안에 쓰여도 전역변수로 쓰이기 때문에 요즘은 let을 씀
+            b = a + 5;
+            document.write("b = " + b + "<br>");
+        }
+        function bbb() {
+            c = b + 5;
+            document.write("c = " + c + "<br>")
+        }
+    </script>
+</head>
+
+<body>
+    <div>
+        <h2>java script 전역 변수와 함수</h2>
+    </div>
+    <script>
+        //함수 호출
+        aaa();
+        bbb();
+    </script>
+</body>
+
+</html>

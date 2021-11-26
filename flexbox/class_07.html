@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>class_07.html</title>
+    <style>
+        /* flexwrap : nowrap | wrap | wrap-reverse */
+        .parent {
+            border: 5px solid green;
+            /* display : grid는 변화 없지만 flex는 자동 인라인으로 바뀜 */
+            display: flex;
+            /* flex-direction과 fles-wrap을 축약한 속성 flex-flow */
+
+            flex-flow: column nowrap;
+        }
+
+        .parent div {
+            width: 100px;
+            height: 100px;
+            color: #fff;
+            text-align: center;
+            margin: 5px;
+            background-color: crimson;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="child1">1</div>
+        <div class="child2">2</div>
+        <div class="child3">3</div>
+    </div>
+</body>
+
+</html>
