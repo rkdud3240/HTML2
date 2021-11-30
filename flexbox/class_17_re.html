@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class_17re</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial;
+        }
+
+        .container {
+            width: 1200px;
+            margin: auto;
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        header {
+            background-color: tomato;
+            flex: 1;
+            padding: 10px;
+        }
+
+        section {
+            display: flex;
+        }
+
+        section article {
+            padding: 30px 10px;
+        }
+
+        article.main {
+            background-color: gray;
+            order: 2;
+            flex: 4;
+        }
+
+        footer {
+            background-color: blue;
+            flex: 1;
+            padding: 10px;
+        }
+
+        article.left {
+            background-color: yellow;
+            flex: 1;
+            order: 1;
+        }
+
+        article.right {
+            background-color: green;
+            flex: 1;
+            order: 3;
+        }
+
+        @media (max-width:768px) {
+            .container {
+                width: 100%;
+
+            }
+
+            section {
+                flex-direction: column;
+            }
+
+            section article {
+                padding: 10px;
+
+            }
+
+            article.main {
+                order: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>Header</header>
+        <section>
+            <article class="main">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus consectetur labore odio aut sequi
+                quo quidem. Iure deserunt fugiat velit eveniet ad officia assumenda esse mollitia eaque. Harum,
+                laboriosam mollitia.
+            </article>
+            <article class="left">Aside1</article>
+            <article class="right">Aside2</article>
+        </section>
+        <footer>Footer</footer>
+    </div>
+</body>
+
+</html>
