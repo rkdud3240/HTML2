@@ -24,30 +24,28 @@
         // }
         // showMessage();
 
-        let userName = 'John';
-        function showMessage() {
-            userName = "Bob";
-            let message = 'Hello, ' + userName;
-            alert(message);
-        }
-        //생각 !!
-        // alert(userName); // 함수 호출 전이므로 John이 출력됨
-        showMessage();
-        alert(userName); // 함수에 의해 Bob로 값이 변경됨
-
         // let userName = 'John';
         // function showMessage() {
-        //     let userName = "Bob"; // 외부변수와 같은 이름을 가진 지역변수
-        //     let message = 'Hello, ' + userName; // Bob
+        //     userName = "Bob";
+        //     let message = 'Hello, ' + userName;
         //     alert(message);
         // }
+        //생각 !!
+        // alert(userName); // 함수 호출 전이므로 John이 출력됨
         // showMessage();
-        // alert(userName);
-        // 함수는 외부 변수에 접근하지 않습니다.
+        // alert(userName); // 함수에 의해 Bob로 값이 변경됨
 
+        let userName = 'John';
+        function showMessage() {
+            let userName = "Bob"; // 외부변수와 같은 이름을 가진 지역변수
+            let message = 'Hello, ' + userName; // Bob
+            alert(message);
+        }
+        showMessage();
+        alert(userName);
+        // 함수는 외부 변수에 접근하지 않습니다.
     </script>
 </head>
-
 <body>
     <script>
         // showMessage();
